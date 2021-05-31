@@ -1,4 +1,4 @@
-const faker = require('faker');
+const faker = require('faker')
 
 const generateUser = ({
   firstName = faker.name.firstName(),
@@ -10,7 +10,7 @@ const generateUser = ({
   lastName,
   department,
   createdAt
-});
+})
 
 const generateArticle = ({
   name = 'Mongodb - introduction',
@@ -22,10 +22,10 @@ const generateArticle = ({
   description,
   type,
   tags
-});
+})
 
 module.exports = {
   mapUser: generateUser,
   mapArticle: generateArticle,
   getRandomFirstName: () => faker.name.firstName()
-};
+}
